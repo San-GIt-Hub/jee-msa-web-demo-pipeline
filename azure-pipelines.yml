@@ -121,7 +121,7 @@ stages:
               sudo mv oc /usr/local/bin/
 
               echo "=== 2. Autenticando en el Clúster ==="
-              oc login --token=$(OPENSHIFT_TOKEN) --server=$(OPENSHIFT_SERVER) --insecure-skip-tls-verify=true
+              oc login --token=$(sha256~btu6J_QIBV5FFbWeKmM7W-ZwlbuXil9Z7Jkr-F1UA94) --server=$(https://api.rm3.7wse.p1.openshiftapps.com:6443) --insecure-skip-tls-verify=true
 
               echo "=== 3. Seleccionando Proyecto ==="
               oc project santiago-acks-dev
